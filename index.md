@@ -9,6 +9,8 @@ I'm a Ph.D. in Computer Science from Universidade Federal de Pernambuco (CIn-UFP
 ## Publications
 
 
+-  Halisson Alberdan Cavalcanti Cardoso, Silvio de Barros Melo, Ricardo Martins de Abreu Silva, Sidartha Azevedo Lobo de Carvalho, Silas Garrido Teixeira de Carvalho Santos, Carlos Costa Dantas: Spectral analysis and optimization of the condition number problem. Computer Physics Communications, v. 258, p. 107587, 2021. ([DOI](https://dx.doi.org/10.1016/j.cpc.2020.107587){:target="_blank"}).
+-  Bruno Iran Ferreira Maciel, Silas Garrido T. de Carvalho Santos, Roberto Souto Maior de Barros: MOAManager: A tool to support data stream experiments. Software-Practice & Experience, v. 50, p. 325-334, 2020 ([DOI](https://dx.doi.org/10.1002/spe.2795){:target="_blank"}).
 -  Roberto Souto Maior de Barros, Silas Garrido T. de Carvalho Santos: An overview and comprehensive comparison of ensembles for concept drift. Information Fusion, v. 52, p. 213-244, 2019 ([DOI](https://doi.org/10.1016/j.inffus.2019.03.006){:target="_blank"}).
 -  Silas Garrido Teixeira de Carvalho Santos, Roberto Souto Maior de Barros: Online AdaBoost-based methods for multiclass problems. Artificial Intelligence Review, 2019 ([DOI](https://doi.org/10.1007/s10462-019-09696-6){:target="_blank"}).
 -  Silas G. T. C. Santos, Roberto S. M. Barros, Paulo M. Gonçalves Jr.: A differential evolution based method for tuning concept drift detectors in data streams. Information Sciences, v. 485, p. 376-393, 2019 ([DOI](https://doi.org/10.1016/j.ins.2019.02.031){:target="_blank"}).
