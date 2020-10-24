@@ -6,6 +6,9 @@
 
 - name: "Google Scholar"
   link: "https://scholar.google.com.br/citations?user=2rFpFMcAAAAJ&hl"
+  
+- name: "ORCID"
+  link: "https://orcid.org/0000-0002-9758-7543"
 
 - name: "GitHub"
   link: "https://github.com/silasgtcs"
