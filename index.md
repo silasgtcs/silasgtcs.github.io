@@ -8,7 +8,7 @@ I'm a Ph.D. in Computer Science from Universidade Federal de Pernambuco (CIn-UFP
 
 ## Publications
 
--  Evaluating k-NN in the Classification of Data Streams with Concept Drift. arXiv, 2022 ([DOI]([https://doi.org/10.1145/3466616](https://doi.org/10.48550/arXiv.2210.03119)){:target="_blank"}).
+-  Evaluating k-NN in the Classification of Data Streams with Concept Drift. arXiv, 2022 ([DOI](https://doi.org/10.48550/arXiv.2210.03119){:target="_blank"}).
 -  Dynamically Adjusting Diversity in Ensembles for the Classification of Data Streams with Concept Drift. ACM Transactions on Knowledge Discovery from Data, v. 16 (Issue 2), p. 1-20, 2022 ([DOI](https://doi.org/10.1145/3466616){:target="_blank"}).
 -  Spectral analysis and optimization of the condition number problem. Computer Physics Communications, v. 258, p. 107587, 2021 ([DOI](https://dx.doi.org/10.1016/j.cpc.2020.107587){:target="_blank"}).
 -  Statistical Tests Ensemble Drift Detector. IEEE Symposium Series on Computational Intelligence (SSCI), Canberra, Australia, p. 1021-1028, 2020 ([DOI](http://dx.doi.org/10.1109/SSCI47803.2020.9308267){:target="_blank"}).
