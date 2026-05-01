@@ -1,0 +1,26 @@
+## Publications
+
+<p style="font-size:0.85em; color:#666;">
+  Listed in reverse chronological order · 
+  Fetched automatically from 
+  <a href="https://scholar.google.com/citations?user={{ site.scholar_id }}" target="_blank">Google Scholar</a>
+</p>
+
+{% assign pubs_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+
+{% for year_group in pubs_by_year %}
+### {{ year_group.name }}
+
+{% for pub in year_group.items %}
+- **{{ pub.title }}**  
+  {{ pub.authors | join: ", " }}  
+  *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}  
+  {% if pub.citations > 0 %}
+  <span style="font-size:0.8em; color:#888;">📖 {{ pub.citations }} citações</span>
+  {% endif %}
+  {% if pub.url != "" %}
+  · [Link]({{ pub.url }}){:target="_blank"}
+  {% endif %}
+
+{% endfor %}
+{% endfor %}
