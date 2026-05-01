@@ -1,1 +1,222 @@
-[]
+- title: A comparative study on concept drift detectors
+  venue: Expert Systems with Applications 41 (18)
+  year: 2014
+  citations: 268
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u-x6o8ySG0sC
+  authors:
+  - PM Gonçalves Jr
+  - SGT de Carvalho Santos
+  - RSM Barros
+  - DCL Vieira
+- title: 'RDDM: Reactive drift detection method'
+  venue: Expert Systems with Applications 90
+  year: 2017
+  citations: 254
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
+  authors:
+  - RSM Barros
+  - DRL Cabral
+  - PM Gonçalves Jr
+  - SGTC Santos
+- title: A large-scale comparison of concept drift detectors
+  venue: Information Sciences 451
+  year: 2018
+  citations: 217
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:zYLM7Y9cAGgC
+  authors:
+  - RSM Barros
+  - SGTC Santos
+- title: An overview and comprehensive comparison of ensembles for concept drift
+  venue: Information Fusion 52
+  year: 2019
+  citations: 111
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:W7OEmFMy1HYC
+  authors:
+  - RSM de Barros
+  - SGT de Carvalho Santos
+- title: A boosting-like online learning ensemble
+  venue: 2016 International Joint Conference on Neural Networks (IJCNN)
+  year: 2016
+  citations: 81
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:qjMakFHDy7sC
+  authors:
+  - RSM de Barros
+  - SGT de Carvalho Santos
+  - PMG Júnior
+- title: A lightweight concept drift detection ensemble
+  venue: 2015 IEEE 27th International Conference on Tools with Artificial …
+  year: 2015
+  citations: 77
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:d1gkVwhDpl0C
+  authors:
+  - BIF Maciel
+  - SGTC Santos
+  - RSM Barros
+- title: Speeding up recovery from concept drifts
+  venue: 'Machine Learning and Knowledge Discovery in Databases: European Conference
+    …'
+  year: 2014
+  citations: 65
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u5HHmVD_uO8C
+  authors:
+  - SGTC Santos
+  - PM Gonçalves Júnior
+  - GDS Silva
+  - RSM de Barros
+- title: Online adaboost-based methods for multiclass problems
+  venue: Artificial Intelligence Review 53 (2)
+  year: 2020
+  citations: 51
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Y0pCki6q_DkC
+  authors:
+  - SGTC Santos
+  - RSM de Barros
+- title: A differential evolution based method for tuning concept drift detectors
+    in data streams
+  venue: Information Sciences 485
+  year: 2019
+  citations: 36
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Tyk-4Ss8FVUC
+  authors:
+  - SGTC Santos
+  - RSM Barros
+  - PM Gonçalves Jr
+- title: Optimizing the parameters of drift detection methods using a genetic algorithm
+  venue: 2015 IEEE 27th International Conference on Tools with Artificial …
+  year: 2015
+  citations: 25
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:9yKSN-GCB0IC
+  authors:
+  - SGTC Santos
+  - RSM Barros
+  - PMG Júnior
+- title: Dynamically Adjusting Diversity in Ensembles for the Classification of Data
+    Streams with Concept Drift
+  venue: ACM Transactions on Knowledge Discovery from Data (TKDD) 16 (2)
+  year: 2021
+  citations: 16
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:LkGwnXOMwfcC
+  authors:
+  - JIG Hidalgo
+  - SGTC Santos
+  - RSM Barros
+- title: 'MOAManager: A tool to support data stream experiments'
+  venue: 'Software: Practice and Experience 50 (4)'
+  year: 2020
+  citations: 13
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:eQOLeE2rZwMC
+  authors:
+  - BIF Maciel
+  - SGTC Santos
+  - RSM Barros
+- title: Spectral analysis and optimization of the condition number problem
+  venue: Computer Physics Communications 258
+  year: 2021
+  citations: 7
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:_FxGoFyzp5QC
+  authors:
+  - HAC Cardoso
+  - S de Barros Melo
+  - RM de Abreu Silva
+  - SAL de Carvalho
+  - '...'
+- title: Statistical tests ensemble drift detector
+  venue: 2020 IEEE Symposium Series on Computational Intelligence (SSCI)
+  year: 2020
+  citations: 5
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:roLk4NBRz8UC
+  authors:
+  - JLM Pérez
+  - RSM Barros
+  - SGTC Santos
+- title: 'Enhancing Semi-Supervised Learning with Concept Drift Detection and Self-Training:
+    A Study on Classifier Diversity and Performance'
+  venue: IEEE Access
+  year: 2025
+  citations: 3
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:3fE2CSJIrl8C
+  authors:
+  - JLM Pérez
+  - RSM Barros
+  - SGTC Santos
+- title: Evaluating k-NN in the Classification of Data Streams with Concept Drift
+  venue: arXiv preprint arXiv:2210.03119
+  year: 2022
+  citations: 3
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Se3iqnhoufwC
+  authors:
+  - RSM de Barros
+  - SGTC Santos
+  - JP Barddal
+- title: Paired k-NN learners with dynamically adjusted number of neighbors for classification
+    of drifting data streams
+  venue: Knowledge and Information Systems 65 (4)
+  year: 2023
+  citations: 2
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:UebtZRa9Y70C
+  authors:
+  - JIG Hidalgo
+  - SGTC Santos
+  - RSM de Barros
+- title: Experimenting with Supervised Drift Detectors in Semi-supervised Learning
+  venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
+  year: 2023
+  citations: 1
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:5nxA0vEk-isC
+  authors:
+  - JLM Pérez
+  - RSM de Barros
+  - SGT de Carvalho Santos
+- title: 'Quantifying Webpage Performance: A Comparative Analysis of TCP/IP and QUIC
+    Communication Protocols for Improved Efficiency'
+  venue: Data 8 (8)
+  year: 2023
+  citations: 1
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:8k81kl-MbHgC
+  authors:
+  - TCC Nepomuceno
+  - KTC Nepomuceno
+  - FC da Silva
+  - '...'
+- title: Avaliação criteriosa dos algoritmos de detecção de concept drifts
+  venue: ''
+  year: 2015
+  citations: 1
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:2osOgNQ5qMEC
+  authors:
+  - SGTC SANTOS
+- title: Features and Classes Drift Detector to Deal with Imbalanced Data Streams
+  venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
+  year: 2023
+  citations: 0
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:0EnyYjriUFMC
+  authors:
+  - SGT de Carvalho Santos
+  - DRDL Cabral
+  - RSM de Barros
+- title: Stock Price Movement Prediction based on Optimized Traditional Machine Learning
+    Models
+  venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
+  year: 2023
+  citations: 0
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:hqOjcs7Dif8C
+  authors:
+  - JJDO Silva
+  - RSM de Barros
+  - SGT de Carvalho Santos
+- title: Evaluating k-NN in the Classification of Data Streams with Concept Drift
+  venue: arXiv e-prints
+  year: 2022
+  citations: 0
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:MXK_kJrjxJIC
+  authors:
+  - R Souto Maior de Barros
+  - S Garrido Teixeira de Carvalho Santos
+  - '...'
+- title: Online boosting para problemas multiclasse
+  venue: ''
+  year: 2019
+  citations: 0
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:YsMSGLbcyi4C
+  authors:
+  - SGTC SANTOS
