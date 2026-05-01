@@ -2,30 +2,14 @@
 
 {% if site.data.publications %}
 
-<p style="font-size:0.85em; color:#666;">
-  Listed in reverse chronological order ·
-  Fetched automatically from
-  <a href="https://scholar.google.com/citations?user={{ site.scholar_id }}" target="_blank">Google Scholar</a>
-</p>
+{% assign sorted_pubs = site.data.publications | sort: "citations" | reverse %}
+{% for pub in sorted_pubs %}
+- {{ pub.title }}. *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.url != "" %} ([DOI]({{ pub.url }}){:target="_blank"}){% endif %}{% if pub.citations > 0 %} <span style="font-size:0.75em; color:#aaa;">({{ pub.citations }})</span>{% endif %}
 
-{% assign pubs_by_year = site.data.publications | group_by: "year" | sort: "name" | reverse %}
-
-{% for year_group in pubs_by_year %}
-### {{ year_group.name }}
-
-{% for pub in year_group.items %}
-- **{{ pub.title }}**  
-  {{ pub.authors | join: ", " }}  
-  *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}  
-  {% if pub.citations > 0 %}<span style="font-size:0.8em; color:#888;">📖 {{ pub.citations }} citações</span>{% endif %}
-  {% if pub.url != "" %}· [Link]({{ pub.url }}){:target="_blank"}{% endif %}
-
-{% endfor %}
 {% endfor %}
 
 {% else %}
 
-{% comment %} Publicações estáticas enquanto o script ainda não rodou {% endcomment %}
 -  Evaluating k-NN in the Classification of Data Streams with Concept Drift. arXiv, 2022 ([DOI](https://doi.org/10.48550/arXiv.2210.03119){:target="_blank"}).
 -  Dynamically Adjusting Diversity in Ensembles for the Classification of Data Streams with Concept Drift. ACM Transactions on Knowledge Discovery from Data, v. 16 (Issue 2), p. 1-20, 2022 ([DOI](https://doi.org/10.1145/3466616){:target="_blank"}).
 -  Spectral analysis and optimization of the condition number problem. Computer Physics Communications, v. 258, p. 107587, 2021 ([DOI](https://dx.doi.org/10.1016/j.cpc.2020.107587){:target="_blank"}).
