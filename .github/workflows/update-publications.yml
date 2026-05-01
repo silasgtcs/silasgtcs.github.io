@@ -1,4 +1,4 @@
-name: Update Publications from Open Alexandria
+name: Update Publications from Semantic Scholar
 
 on:
   schedule:
@@ -35,5 +35,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/publications.yml
-          git diff --cached --quiet || git commit -m "chore: atualiza publicações do Google Scholar [skip ci]"
+          git diff --cached --quiet || git commit -m "chore: atualiza publicações via Semantic Scholar [skip ci]"
           git push
