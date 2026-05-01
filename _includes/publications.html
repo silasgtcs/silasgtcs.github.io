@@ -1,8 +1,10 @@
 ## Publications
 
+{% if site.data.publications %}
+
 <p style="font-size:0.85em; color:#666;">
-  Listed in reverse chronological order · 
-  Fetched automatically from 
+  Listed in reverse chronological order ·
+  Fetched automatically from
   <a href="https://scholar.google.com/citations?user={{ site.scholar_id }}" target="_blank">Google Scholar</a>
 </p>
 
@@ -15,12 +17,16 @@
 - **{{ pub.title }}**  
   {{ pub.authors | join: ", " }}  
   *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}  
-  {% if pub.citations > 0 %}
-  <span style="font-size:0.8em; color:#888;">📖 {{ pub.citations }} citações</span>
-  {% endif %}
-  {% if pub.url != "" %}
-  · [Link]({{ pub.url }}){:target="_blank"}
-  {% endif %}
+  {% if pub.citations > 0 %}<span style="font-size:0.8em; color:#888;">📖 {{ pub.citations }} citações</span>{% endif %}
+  {% if pub.url != "" %}· [Link]({{ pub.url }}){:target="_blank"}{% endif %}
 
 {% endfor %}
 {% endfor %}
+
+{% else %}
+
+{% comment %} Publicações estáticas enquanto o script ainda não rodou {% endcomment %}
+-  Evaluating k-NN in the Classification of Data Streams with Concept Drift. arXiv, 2022 ([DOI](https://doi.org/10.48550/arXiv.2210.03119){:target="_blank"}).
+-  Dynamically Adjusting Diversity in Ensembles... *(lista original do index.md)*
+
+{% endif %}
