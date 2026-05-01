@@ -1,4 +1,4 @@
-name: Update Publications from Semantic Scholar
+name: Update Publications from Open Alexandria
 
 on:
   schedule:
@@ -28,6 +28,7 @@ jobs:
         run: python scripts/fetch_publications.py
         env:
           SCHOLAR_ID: ${{ secrets.SCHOLAR_ID }}
+          ORCID_ID: ${{ secrets.ORCID_ID }}
 
       - name: Commit changes if any
         run: |
