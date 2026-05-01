@@ -3,57 +3,78 @@ import yaml
 import requests
 import time
 
-SCHOLAR_ID = os.environ.get("SCHOLAR_ID")
+ORCID = os.environ.get("ORCID_ID", "")
+AUTHOR_NAME = "Silas Garrido Teixeira"  # fallback caso ORCID não funcione
 OUTPUT_FILE = "_data/publications.yml"
+BASE_URL = "https://api.openalex.org"
 
-BASE_URL = "https://api.semanticscholar.org/graph/v1"
-FIELDS = "title,year,venue,externalIds,authors,citationCount,url"
+def get_author_id() -> str:
+    if ORCID:
+        url = f"{BASE_URL}/authors/https://orcid.org/{ORCID}"
+        r = requests.get(url, timeout=30)
+        r.raise_for_status()
+        return r.json()["id"]
+    else:
+        url = f"{BASE_URL}/authors"
+        r = requests.get(url, params={"search": AUTHOR_NAME, "per_page": 1}, timeout=30)
+        r.raise_for_status()
+        results = r.json().get("results", [])
+        if not results:
+            raise ValueError(f"Autor '{AUTHOR_NAME}' não encontrado no OpenAlex.")
+        author_id = results[0]["id"]
+        print(f"Autor encontrado: {results[0]['display_name']} ({author_id})")
+        return author_id
 
 def fetch_publications(author_id: str) -> list[dict]:
-    print(f"Buscando publicações para autor: {author_id}")
     publications = []
-    offset = 0
-    limit = 100
+    cursor = "*"
+    while cursor:
+        params = {
+            "filter": f"author.id:{author_id}",
+            "fields": "title,publication_year,primary_location,cited_by_count,authorships,doi",
+            "per_page": 100,
+            "cursor": cursor,
+        }
+        r = requests.get(f"{BASE_URL}/works", params=params, timeout=30)
+        r.raise_for_status()
+        data = r.json()
 
-    while True:
-        url = f"{BASE_URL}/author/{author_id}/papers"
-        params = {"fields": FIELDS, "limit": limit, "offset": offset}
-        response = requests.get(url, params=params, timeout=30)
-        response.raise_for_status()
-        data = response.json()
+        for work in data.get("results", []):
+            venue = ""
+            loc = work.get("primary_location") or {}
+            source = loc.get("source") or {}
+            venue = source.get("display_name") or ""
 
-        papers = data.get("data", [])
-        if not papers:
-            break
+            doi = work.get("doi") or ""
+            if doi.startswith("https://doi.org/"):
+                doi = doi.replace("https://doi.org/", "")
 
-        for paper in papers:
-            doi = (paper.get("externalIds") or {}).get("DOI", "")
+            authors = [
+                a["author"]["display_name"]
+                for a in work.get("authorships", [])
+                if a.get("author")
+            ]
+
             entry = {
-                "title": paper.get("title", ""),
-                "venue": paper.get("venue") or "",
-                "year": paper.get("year") or 0,
-                "citations": paper.get("citationCount") or 0,
-                "url": f"https://doi.org/{doi}" if doi else (paper.get("url") or ""),
-                "authors": [a["name"] for a in paper.get("authors", [])],
+                "title": work.get("title") or "",
+                "venue": venue,
+                "year": work.get("publication_year") or 0,
+                "citations": work.get("cited_by_count") or 0,
+                "url": f"https://doi.org/{doi}" if doi else "",
+                "authors": authors,
             }
             publications.append(entry)
-            print(f"  ✓ {entry['title'][:70]}")
+            print(f"  ✓ {entry['title'][:70]} ({entry['citations']} cit.)")
 
-        if len(papers) < limit:
-            break
-        offset += limit
-        time.sleep(1)
+        cursor = data.get("meta", {}).get("next_cursor")
+        time.sleep(0.5)
 
-    publications.sort(key=lambda x: (x["year"], x["citations"]), reverse=True)
+    publications.sort(key=lambda x: (x["citations"], x["year"]), reverse=True)
     return publications
 
-def save_yaml(publications, path):
-    with open(path, "w", encoding="utf-8") as f:
-        yaml.dump(publications, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
-    print(f"\nSalvas {len(publications)} publicações em '{path}'.")
-
 if __name__ == "__main__":
-    if not SCHOLAR_ID:
-        raise ValueError("SCHOLAR_ID não definido.")
-    pubs = fetch_publications(SCHOLAR_ID)
-    save_yaml(pubs, OUTPUT_FILE)
+    author_id = get_author_id()
+    pubs = fetch_publications(author_id)
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        yaml.dump(pubs, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+    print(f"\nSalvas {len(pubs)} publicações em '{OUTPUT_FILE}'.")
