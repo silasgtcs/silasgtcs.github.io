@@ -1,4 +1,4 @@
-name: Update Publications from Google Scholar
+name: Update Publications from Semantic Scholar
 
 on:
   schedule:
