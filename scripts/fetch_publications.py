@@ -3,7 +3,7 @@ import yaml
 import requests
 import time
 
-SCHOLAR_ID = os.environ.get("SCHOLAR_ID")  # Agora será o Semantic Scholar Author ID
+SCHOLAR_ID = os.environ.get("SCHOLAR_ID")
 OUTPUT_FILE = "_data/publications.yml"
 
 BASE_URL = "https://api.semanticscholar.org/graph/v1"
