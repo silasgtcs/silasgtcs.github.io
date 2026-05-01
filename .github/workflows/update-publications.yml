@@ -22,11 +22,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install scholarly pyyaml
+        run: pip install requests pyyaml
 
       - name: Fetch publications and write YAML
         run: python scripts/fetch_publications.py
         env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
           SCHOLAR_ID: ${{ secrets.SCHOLAR_ID }}
           ORCID_ID: ${{ secrets.ORCID_ID }}
 
