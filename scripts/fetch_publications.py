@@ -30,7 +30,7 @@ def fetch_publications(author_id: str) -> list[dict]:
     cursor = "*"
     while cursor:
         params = {
-            "filter": f"author.id:{author_id}",
+            "filter": f"authorships.author.id:{author_id}",
             "fields": "title,publication_year,primary_location,cited_by_count,authorships,doi",
             "per_page": 100,
             "cursor": cursor,
