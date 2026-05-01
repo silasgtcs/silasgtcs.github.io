@@ -2,7 +2,7 @@
 
 {% if site.data.publications %}
 {% assign sorted_pubs = site.data.publications | sort: "citations" | reverse %}
-{% for pub in sorted_pubs %}- {{ pub.title }}. *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.url != "" %} ([DOI]({{ pub.url }}){:target="_blank"}){% endif %}{% if pub.citations > 0 %} · <span style="font-size:0.85em;">{{ pub.citations }} citations</span>{% endif %}
+{% for pub in sorted_pubs %}- {{ pub.title }}. *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.url != "" %} ([DOI]({{ pub.url }}){:target="_blank"}){% endif %}{% if pub.citations > 0 %} · {{ pub.citations }} citation{% if pub.citations > 1 %}s{% endif %}{% endif %}
 {% endfor %}
 
 {% else %}
