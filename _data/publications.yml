@@ -1,7 +1,7 @@
 - title: A comparative study on concept drift detectors
   venue: Expert Systems with Applications 41 (18)
   year: 2014
-  citations: 268
+  citations: 270
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u-x6o8ySG0sC
   authors:
   - PM Gonçalves Jr
@@ -11,7 +11,7 @@
 - title: 'RDDM: Reactive drift detection method'
   venue: Expert Systems with Applications 90
   year: 2017
-  citations: 254
+  citations: 255
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
   authors:
   - RSM Barros
@@ -21,7 +21,7 @@
 - title: A large-scale comparison of concept drift detectors
   venue: Information Sciences 451
   year: 2018
-  citations: 217
+  citations: 218
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:zYLM7Y9cAGgC
   authors:
   - RSM Barros
@@ -29,7 +29,7 @@
 - title: An overview and comprehensive comparison of ensembles for concept drift
   venue: Information Fusion 52
   year: 2019
-  citations: 111
+  citations: 112
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:W7OEmFMy1HYC
   authors:
   - RSM de Barros
@@ -129,6 +129,16 @@
   - JLM Pérez
   - RSM Barros
   - SGTC Santos
+- title: 'Enhancing Semi-Supervised Learning with Concept Drift Detection and Self-Training:
+    A Study on Classifier Diversity and Performance'
+  venue: IEEE Access
+  year: 2025
+  citations: 3
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:3fE2CSJIrl8C
+  authors:
+  - JLM Pérez
+  - RSM Barros
+  - SGTC Santos
 - title: Evaluating k-NN in the Classification of Data Streams with Concept Drift
   venue: arXiv preprint arXiv:2210.03119
   year: 2022
@@ -138,16 +148,6 @@
   - RSM de Barros
   - SGTC Santos
   - JP Barddal
-- title: 'Enhancing Semi-Supervised Learning with Concept Drift Detection and Self-Training:
-    A Study on Classifier Diversity and Performance'
-  venue: IEEE Access
-  year: 2025
-  citations: 2
-  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:3fE2CSJIrl8C
-  authors:
-  - JLM Pérez
-  - RSM Barros
-  - SGTC Santos
 - title: Paired k-NN learners with dynamically adjusted number of neighbors for classification
     of drifting data streams
   venue: Knowledge and Information Systems 65 (4)
