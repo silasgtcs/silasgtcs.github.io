@@ -1,96 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Silas Garrido</title>
-
+    <title>{{ site.title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="keywords" content="{{ site.author }}, {{ site.title }}, machine learning, concept drift, online learning">
     <meta name="author" content="{{ site.author }}">
     {% if page.url == "/404.html" %}
         <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
-    {% if page.description %}
-        {% assign desc = page.description %}
-    {% else %}
-        {% assign desc = site.description %}
-    {% endif %}
-    {% if page.url %}
-        {% assign url = site.url | append: site.baseurl | append: page.url %}
-    {% else %}
-        {% assign url = site.url | append: site.baseurl | append: page.url %}
-    {% endif %}
+    {% if page.description %}{% assign desc = page.description %}{% else %}{% assign desc = site.description %}{% endif %}
+    {% if page.url %}{% assign url = site.url | append: site.baseurl | append: page.url %}{% else %}{% assign url = site.url | append: site.baseurl | append: page.url %}{% endif %}
     <meta name="description" content="{{ desc }}">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
     <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="shortcut-icon" type="image/png" href="/favicon.png">
-    {% if site.twitter_username %}
-        <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
-    {% endif %}
-    <!-- Facebook Open Graph -->
+    {% if site.twitter_username %}<link rel="author" href="https://twitter.com/{{ site.twitter_username }}">{% endif %}
     <meta name="og:description" content="{{ desc }}">
     <meta name="og:title" content="{{ site.title }}">
     <meta name="og:url" content="{{ url }}">
-    <meta name="og:type" content="article">
-    {% if site.og_image %}
-        <meta name="og:image" content="{{ site.og_image }}">
-    {% endif %}
-    {% if site.facebook_id %}
-        <meta name="fb:admins" content="{{ site.facebook_id }}">
-    {% endif %}
-    <!-- Twitter -->
+    <meta name="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ desc }}">
     <meta name="twitter:url" content="{{ url }}">
-    {% if site.twitter_image %}
-        <meta name="twitter:image" content="{{ site.twitter_image }}">
-    {% else %}
-        <meta name="twitter:image" content="{{ site.profile_picture }}">
-    {% endif %}
 </head>
 <body>
-    <div class="wrapper">
-        <div class="navbar container">
-            <a id="author-name" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
-            <ul class="alignable pull-right navbar-ul">
-                {% for x in site.data.nav %}
-                    <li class="alignable pull-right nav-list"><a target="_blank" href="{{ x.link }}">{{ x.name }}</a>
-                    {% if forloop.first == false %}
-                        /
-                    {% endif %}
-                        </li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div style="clear:both"></div>
-        <hr>
-        {% if page.is_contact == true %}
-            <div class="container content contact">
-        {% else %}
-            <div class="container content">
-        {% endif %}
-                {{ content }}
-				{% if site.footer == true %}
-					<hr />
-					<p style="text-align: center; margin-bottom: 10px">
-					<a target="_blank" href="{{ site.footer_url }}" style="color: black"><small>{{ site.footer_text }}</small></a>
-					</p>
-				{% endif %}
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="container">
+                <a class="site-name" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
+                <p class="site-tagline">Machine Learning &middot; Online Learning &middot; Concept Drift</p>
+                <nav class="nav-links" aria-label="External profiles">
+                    {% for x in site.data.nav %}<a href="{{ x.link }}" target="_blank" rel="noopener">{{ x.name }}</a>{% endfor %}
+                </nav>
             </div>
+        </header>
+        <main class="container content">
+            {{ content }}
+        </main>
+        {% if site.footer == true %}
+        <footer class="site-footer">
+            <div class="container">
+                <a href="{{ site.footer_url }}" target="_blank" rel="noopener">{{ site.footer_text }}</a>
+            </div>
+        </footer>
+        {% endif %}
     </div>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119745528-1"></script>
-	    <script>
-		    window.dataLayer = window.dataLayer || [];
-		    function gtag(){dataLayer.push(arguments);}
-		    gtag('js', new Date());
-
-		    gtag('config', 'UA-119745528-1');
-	    </script>
-
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119745528-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119745528-1');
+    </script>
 </body>
-<footer>
-</footer>
+</html>
