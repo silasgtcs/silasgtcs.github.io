@@ -1,26 +1,146 @@
 ## Publications
 
+<div class="publications-list" style="margin-top: 1.5rem;">
 {% if site.data.publications %}
-{% assign sorted_pubs = site.data.publications | sort: "citations" | reverse %}
-{% for pub in sorted_pubs %}- {% if pub.url != "" %}[{{ pub.title }}]({{ pub.url }}){:target="_blank"}{% else %}{{ pub.title }}{% endif %}. *{{ pub.venue }}*{% if pub.year %}, {{ pub.year }}{% endif %}{% if pub.citations > 0 %} · <span>{{ pub.citations }} citation{% if pub.citations > 1 %}s{% endif %}</span>{% endif %}
-{% endfor %}
+  {% assign sorted_pubs = site.data.publications | sort: "citations" | reverse %}
+  {% for pub in sorted_pubs %}
+    <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+      <div style="min-width: 60px; font-weight: 500; color: #7c84a0; font-size: 1rem;">
+        {% if pub.year %}{{ pub.year }}{% else %}&mdash;{% endif %}
+      </div>
+      <div style="flex: 1;">
+        <div style="font-size: 1rem; margin-bottom: 0.25rem;">
+          {% if pub.url and pub.url != "" %}<a href="{{ pub.url }}" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}
+        </div>
+        <div style="font-size: 0.9rem; color: #7c84a0;">
+          {% if pub.authors %}{{ pub.authors | join: ", " }}. {% endif %}<em>{{ pub.venue }}</em>
+          {% if pub.citations > 0 %} · <span style="display: inline-block; color: #6ee7b7; font-size: 0.75rem; font-weight: 600; background: rgba(110, 231, 183, 0.08); border: 1px solid rgba(110, 231, 183, 0.2); padding: 0.1rem 0.55rem; border-radius: 100px; white-space: nowrap; margin-left: 0.25rem;">{{ pub.citations }} citation{% if pub.citations > 1 %}s{% endif %}</span>{% endif %}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 
 {% else %}
 
-- [Evaluating k-NN in the Classification of Data Streams with Concept Drift](https://doi.org/10.48550/arXiv.2210.03119){:target="_blank"}. *arXiv*, 2022.
-- [Dynamically Adjusting Diversity in Ensembles for the Classification of Data Streams with Concept Drift](https://doi.org/10.1145/3466616){:target="_blank"}. *ACM Transactions on Knowledge Discovery from Data*, v. 16 (Issue 2), p. 1-20, 2022.
-- [Spectral analysis and optimization of the condition number problem](https://dx.doi.org/10.1016/j.cpc.2020.107587){:target="_blank"}. *Computer Physics Communications*, v. 258, p. 107587, 2021.
-- [Statistical Tests Ensemble Drift Detector](http://dx.doi.org/10.1109/SSCI47803.2020.9308267){:target="_blank"}. *IEEE Symposium Series on Computational Intelligence (SSCI)*, Canberra, Australia, p. 1021-1028, 2020.
-- [MOAManager: A tool to support data stream experiments](https://dx.doi.org/10.1002/spe.2795){:target="_blank"}. *Software-Practice & Experience*, v. 50, p. 325-334, 2020.
-- [An overview and comprehensive comparison of ensembles for concept drift](https://doi.org/10.1016/j.inffus.2019.03.006){:target="_blank"}. *Information Fusion*, v. 52, p. 213-244, 2019.
-- [Online AdaBoost-based methods for multiclass problems](https://doi.org/10.1007/s10462-019-09696-6){:target="_blank"}. *Artificial Intelligence Review*, 2019.
-- [A differential evolution based method for tuning concept drift detectors in data streams](https://doi.org/10.1016/j.ins.2019.02.031){:target="_blank"}. *Information Sciences*, v. 485, p. 376-393, 2019.
-- [A large-scale comparison of concept drift detectors](https://dx.doi.org/10.1016/j.ins.2018.04.014){:target="_blank"}. *Information Sciences*, v. 452, p. 348-370, 2018.
-- [RDDM: Reactive drift detection method](https://dx.doi.org/10.1016/j.eswa.2017.08.023){:target="_blank"}. *Expert Systems with Applications*, v. 90, p. 344-355, 2017.
-- [A Boosting-like Online Learning Ensemble](https://dx.doi.org/10.1109/IJCNN.2016.7727427){:target="_blank"}. *International Joint Conference on Neural Networks (IJCNN)*, Vancouver, BC, Canada, p. 1871, 2016.
-- [Optimizing the Parameters of Drift Detection Methods Using a Genetic Algorithm](https://dx.doi.org/10.1109/ICTAI.2015.153){:target="_blank"}. *International Conference on Tools with Artificial Intelligence (ICTAI)*, Vietri sul Mare, Italy, p. 1077, 2015.
-- [A Lightweight Concept Drift Detection Ensemble](https://dx.doi.org/10.1109/ICTAI.2015.151){:target="_blank"}. *International Conference on Tools with Artificial Intelligence (ICTAI)*, Vietri sul Mare, Italy, p. 1061, 2015.
-- [A comparative study on concept drift detectors](https://dx.doi.org/10.1016/j.eswa.2014.07.019){:target="_blank"}. *Expert Systems with Applications*, v. 41, p. 8144-8156, 2014.
-- [Speeding Up Recovery from Concept Drifts](https://dx.doi.org/10.1007/978-3-662-44845-8_12){:target="_blank"}. *Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML/PKDD)*, Nancy, France, v. 8726, p. 179-194, 2014.
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2022</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://doi.org/10.48550/arXiv.2210.03119" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Evaluating k-NN in the Classification of Data Streams with Concept Drift</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>arXiv</em></div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2022</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://doi.org/10.1145/3466616" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Dynamically Adjusting Diversity in Ensembles for the Classification of Data Streams with Concept Drift</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>ACM Transactions on Knowledge Discovery from Data</em>, v. 16 (Issue 2), p. 1-20</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2021</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1016/j.cpc.2020.107587" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Spectral analysis and optimization of the condition number problem</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Computer Physics Communications</em>, v. 258, p. 107587</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2020</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="http://dx.doi.org/10.1109/SSCI47803.2020.9308267" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Statistical Tests Ensemble Drift Detector</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>IEEE Symposium Series on Computational Intelligence (SSCI)</em>, Canberra, Australia, p. 1021-1028</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2020</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1002/spe.2795" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">MOAManager: A tool to support data stream experiments</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Software-Practice & Experience</em>, v. 50, p. 325-334</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2019</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://doi.org/10.1016/j.inffus.2019.03.006" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">An overview and comprehensive comparison of ensembles for concept drift</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Information Fusion</em>, v. 52, p. 213-244</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2019</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://doi.org/10.1007/s10462-019-09696-6" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Online AdaBoost-based methods for multiclass problems</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Artificial Intelligence Review</em></div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2019</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://doi.org/10.1016/j.ins.2019.02.031" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">A differential evolution based method for tuning concept drift detectors in data streams</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Information Sciences</em>, v. 485, p. 376-393</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2018</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1016/j.ins.2018.04.014" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">A large-scale comparison of concept drift detectors</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Information Sciences</em>, v. 452, p. 348-370</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2017</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1016/j.eswa.2017.08.023" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">RDDM: Reactive drift detection method</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Expert Systems with Applications</em>, v. 90, p. 344-355</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2016</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1109/IJCNN.2016.7727427" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">A Boosting-like Online Learning Ensemble</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>International Joint Conference on Neural Networks (IJCNN)</em>, Vancouver, BC, Canada, p. 1871</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2015</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1109/ICTAI.2015.153" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Optimizing the Parameters of Drift Detection Methods Using a Genetic Algorithm</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>International Conference on Tools with Artificial Intelligence (ICTAI)</em>, Vietri sul Mare, Italy, p. 1077</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2015</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1109/ICTAI.2015.151" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">A Lightweight Concept Drift Detection Ensemble</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>International Conference on Tools with Artificial Intelligence (ICTAI)</em>, Vietri sul Mare, Italy, p. 1061</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2014</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1016/j.eswa.2014.07.019" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">A comparative study on concept drift detectors</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Expert Systems with Applications</em>, v. 41, p. 8144-8156</div>
+    </div>
+  </div>
+
+  <div style="display: flex; margin-bottom: 1.5rem; align-items: flex-start;">
+    <div style="min-width: 60px; font-weight: 500; color: #7c84a0;">2014</div>
+    <div style="flex: 1;">
+      <div style="margin-bottom: 0.25rem;"><a href="https://dx.doi.org/10.1007/978-3-662-44845-8_12" target="_blank" rel="noopener" style="color: #7eb8f7; text-decoration: none;">Speeding Up Recovery from Concept Drifts</a></div>
+      <div style="font-size: 0.9rem; color: #7c84a0;"><em>Joint European Conference on Machine Learning and Knowledge Discovery in Databases (ECML/PKDD)</em>, Nancy, France, v. 8726, p. 179-194</div>
+    </div>
+  </div>
 
 {% endif %}
+</div>
