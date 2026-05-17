@@ -15,12 +15,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <meta property="og:title" content="{{ site.title }}">
-    <meta property="og:description" content="{{ desc }}">
-    <meta property="og:url" content="{{ url }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/css/main.css">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="shortcut-icon" type="image/png" href="/favicon.png">
+    {% if site.twitter_username %}<link rel="author" href="https://twitter.com/{{ site.twitter_username }}">{% endif %}
+    <meta name="og:description" content="{{ desc }}">
+    <meta name="og:title" content="{{ site.title }}">
+    <meta name="og:url" content="{{ url }}">
+    <meta name="og:type" content="website">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ desc }}">
@@ -33,7 +35,7 @@
                 <a class="site-name" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
                 <p class="site-tagline">Machine Learning &middot; Online Learning &middot; Concept Drift</p>
                 <nav class="nav-links" aria-label="External profiles">
-                    {% for x in site.data.nav %}<a href="{{ x.link }}" target="_blank" rel="noopener">{% if x.icon %}<i class="{{ x.icon }}" style="margin-right: 6px;"></i>{% endif %}{{ x.name }}</a>{% endfor %}
+                    {% for x in site.data.nav %}<a href="{{ x.link }}" target="_blank" rel="noopener">{{ x.name }}</a>{% endfor %}
                 </nav>
             </div>
         </header>
