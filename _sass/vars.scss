@@ -1,14 +1,23 @@
-/*
- * Customization Variables
- */
+// ─── Design Tokens ───────────────────────────────────────────────
 
-$accent: #FF0F00;
-$image-size: 85px;
-
-/*
- * Build Variables, don't touch
- */
-
-$max-width: 700px;
-$med-width: 600px;
+// Layout
+$max-width:   760px;
+$med-width:   600px;
 $small-width: 480px;
+
+// Colors
+$bg:           #0c0f1a;
+$bg-card:      #131726;
+$bg-pill:      #1d2235;
+$border:       rgba(255,255,255,0.07);
+$border-md:    rgba(255,255,255,0.12);
+$text:         #e8eaf2;
+$text-muted:   #7c84a0;
+$text-faint:   #3d4460;
+$accent:       #7eb8f7;
+$accent-glow:  rgba(126,184,247,0.12);
+$green:        #6ee7b7;
+
+// Typography
+$font-serif: 'Cormorant Garamond', Georgia, serif;
+$font-sans:  'Jost', system-ui, sans-serif;
