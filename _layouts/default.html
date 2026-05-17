@@ -12,17 +12,10 @@
     {% if page.description %}{% assign desc = page.description %}{% else %}{% assign desc = site.description %}{% endif %}
     {% if page.url %}{% assign url = site.url | append: site.baseurl | append: page.url %}{% else %}{% assign url = site.url | append: site.baseurl | append: page.url %}{% endif %}
     <meta name="description" content="{{ desc }}">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
-    
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    
     <meta property="og:title" content="{{ site.title }}">
     <meta property="og:description" content="{{ desc }}">
     <meta property="og:url" content="{{ url }}">
@@ -32,6 +25,9 @@
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ desc }}">
     <meta name="twitter:url" content="{{ url }}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 <body>
     <div class="page-wrapper">
@@ -39,7 +35,6 @@
             <div class="container">
                 <a class="site-name" href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a>
                 <p class="site-tagline">Machine Learning &middot; Online Learning &middot; Concept Drift</p>
-                
                 <nav class="nav-links" aria-label="External profiles">
                     {% for x in site.data.nav %}
                         <a href="{{ x.link }}" target="_blank" rel="noopener">
@@ -47,7 +42,6 @@
                         </a>
                     {% endfor %}
                 </nav>
-
             </div>
         </header>
         <main class="container content">
@@ -61,7 +55,6 @@
         </footer>
         {% endif %}
     </div>
-    
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119745528-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
