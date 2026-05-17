@@ -4,7 +4,7 @@ layout: default
 
 ## About
 
-I'm a Ph.D. in Computer Science from Universidade Federal de Pernambuco (CIn-UFPE). My research area is in Machine Learning, with special interest in Online Learning and Concept Drift.
+I'm a Ph.D. in Computer Science from Universidade Federal de Pernambuco (CIn-UFPE). My research area is in Machine Learning, with special interest in Online Learning and Concept Drift: the study of how statistical patterns in data streams evolve over time and how learning systems can adapt accordingly.
 
 {% include publications.html %}
 
