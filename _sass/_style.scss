@@ -50,11 +50,6 @@ a {
 .site-header {
     padding: 5rem 0 3.5rem;
     border-bottom: 1px solid $border;
-    margin-bottom: 0;
-
-    .container {
-        // inherits container styles
-    }
 }
 
 .site-name {
@@ -114,6 +109,7 @@ a {
 .content {
     padding: 0 0 6rem;
 
+    // Section headings (## About, ## Publications, ## Contact)
     h2 {
         font-family: $font-sans;
         font-size: 0.7rem;
@@ -121,15 +117,16 @@ a {
         letter-spacing: 0.14em;
         text-transform: uppercase;
         color: $accent;
-        margin: 3rem 0 1.25rem;
+        margin: 3.5rem 0 1.25rem;
         padding-top: 3rem;
         border-top: 1px solid $border;
+    }
 
-        &:first-child {
-            border-top: none;
-            padding-top: 0;
-            margin-top: 3rem;
-        }
+    // Remove top border from first h2 on page
+    h2:first-child {
+        border-top: none;
+        padding-top: 0;
+        margin-top: 3rem;
     }
 
     p {
@@ -137,7 +134,7 @@ a {
         color: #c6cade;
         font-weight: 300;
         line-height: 1.8;
-        margin-bottom: 1rem;
+        margin-bottom: 0.75rem;
 
         strong {
             color: $text;
@@ -145,17 +142,19 @@ a {
         }
     }
 
+    // Links inside content body
     a {
         color: $accent;
-        border-bottom: 1px solid rgba(126,184,247,0.3);
         text-decoration: none;
+        border-bottom: 1px solid rgba(126,184,247,0.25);
         &:hover {
             border-bottom-color: $accent;
             text-decoration: none;
         }
     }
 
-    // Publication list (rendered from Liquid template)
+    // ─── Publication list ─────────────────────────────────────────
+
     ul {
         list-style: none;
         padding: 0;
@@ -163,42 +162,39 @@ a {
     }
 
     ul > li {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 1.1rem 0;
+        // No grid — keep inline flow so the citation badge stays on the same line
+        display: block;
+        padding: 1rem 0;
         border-bottom: 1px solid $border;
-        font-size: 0.97rem;
+        font-size: 0.95rem;
         color: $text;
         font-weight: 400;
-        line-height: 1.55;
+        line-height: 1.6;
 
-        &:last-child { border-bottom: none; }
+        &:first-child { padding-top: 0; }
+        &:last-child  { border-bottom: none; }
 
+        // Venue text (italic in Markdown)
         em {
             font-style: italic;
             color: $text-muted;
+            font-weight: 300;
         }
 
+        // Citation badge — inline-block stays in the text flow
         span {
-            color: $green;
-            font-size: 0.78rem;
-            font-weight: 600;
             display: inline-block;
+            vertical-align: middle;
+            color: $green;
+            font-size: 0.75rem;
+            font-weight: 600;
             background: rgba(110, 231, 183, 0.08);
             border: 1px solid rgba(110, 231, 183, 0.2);
-            padding: 0.1rem 0.5rem;
+            padding: 0.1rem 0.55rem;
             border-radius: 100px;
-            margin-left: 0.4rem;
+            margin-left: 0.35rem;
+            white-space: nowrap;
         }
-    }
-
-    // Contact section email display
-    code {
-        font-family: 'Courier New', monospace;
-        font-size: 0.95rem;
-        color: $accent;
-        background: transparent;
-        padding: 0;
     }
 }
 
@@ -229,6 +225,7 @@ a {
 @media (max-width: $small-width) {
     .container { padding: 0 1.25rem; }
     .site-header { padding: 3rem 0 2.5rem; }
+    .nav-links a { font-size: 0.75rem; padding: 0.3rem 0.75rem; }
 }
 
 @import "typography";
