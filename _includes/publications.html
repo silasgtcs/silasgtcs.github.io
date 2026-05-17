@@ -14,7 +14,7 @@
         </div>
         <div style="font-size: 0.9rem; color: #7c84a0;">
           {% if pub.authors %}{{ pub.authors | join: ", " }}. {% endif %}<em>{{ pub.venue }}</em>
-          {% if pub.citations > 0 %} · <span style="display: inline-block; color: #6ee7b7; font-size: 0.75rem; font-weight: 600; background: rgba(110, 231, 183, 0.08); border: 1px solid rgba(110, 231, 183, 0.2); padding: 0.1rem 0.55rem; border-radius: 100px; white-space: nowrap; margin-left: 0.25rem;">{{ pub.citations }} citation{% if pub.citations > 1 %}s{% endif %}</span>{% endif %}
+          {% if pub.citations > 0 %}<span style="display: inline-block; color: #6ee7b7; font-size: 0.75rem; font-weight: 600; background: rgba(110, 231, 183, 0.08); border: 1px solid rgba(110, 231, 183, 0.2); padding: 0.1rem 0.55rem; border-radius: 100px; white-space: nowrap; margin-left: 0.5rem;">{{ pub.citations }} citation{% if pub.citations > 1 %}s{% endif %}</span>{% endif %}
         </div>
       </div>
     </div>
