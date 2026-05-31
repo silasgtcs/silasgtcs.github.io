@@ -17,6 +17,7 @@ title: Silas Garrido
 email: silas@silasgarrido.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: "G-31KTVQF4NP"
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
