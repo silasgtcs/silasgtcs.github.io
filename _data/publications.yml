@@ -1,7 +1,7 @@
 - title: A comparative study on concept drift detectors
   venue: Expert Systems with Applications 41 (18)
   year: 2014
-  citations: 276
+  citations: 277
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u-x6o8ySG0sC
   authors:
   - PM Gonçalves Jr
@@ -11,7 +11,7 @@
 - title: 'RDDM: Reactive drift detection method'
   venue: Expert Systems with Applications 90
   year: 2017
-  citations: 267
+  citations: 268
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
   authors:
   - RSM Barros
@@ -21,7 +21,7 @@
 - title: A large-scale comparison of concept drift detectors
   venue: Information Sciences 451
   year: 2018
-  citations: 221
+  citations: 222
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:zYLM7Y9cAGgC
   authors:
   - RSM Barros
@@ -29,7 +29,7 @@
 - title: An overview and comprehensive comparison of ensembles for concept drift
   venue: Information Fusion 52
   year: 2019
-  citations: 116
+  citations: 117
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:W7OEmFMy1HYC
   authors:
   - RSM de Barros
@@ -66,7 +66,7 @@
 - title: Online adaboost-based methods for multiclass problems
   venue: Artificial Intelligence Review 53 (2)
   year: 2020
-  citations: 51
+  citations: 52
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Y0pCki6q_DkC
   authors:
   - SGTC Santos
@@ -167,6 +167,15 @@
   - JLM Pérez
   - RSM de Barros
   - SGT de Carvalho Santos
+- title: Features and Classes Drift Detector to Deal with Imbalanced Data Streams
+  venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
+  year: 2023
+  citations: 1
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:0EnyYjriUFMC
+  authors:
+  - SGT de Carvalho Santos
+  - DRDL Cabral
+  - RSM de Barros
 - title: 'Quantifying Webpage Performance: A Comparative Analysis of TCP/IP and QUIC
     Communication Protocols for Improved Efficiency'
   venue: Data 8 (8)
@@ -185,15 +194,6 @@
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:2osOgNQ5qMEC
   authors:
   - SGTC SANTOS
-- title: Features and Classes Drift Detector to Deal with Imbalanced Data Streams
-  venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
-  year: 2023
-  citations: 0
-  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:0EnyYjriUFMC
-  authors:
-  - SGT de Carvalho Santos
-  - DRDL Cabral
-  - RSM de Barros
 - title: Stock Price Movement Prediction based on Optimized Traditional Machine Learning
     Models
   venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
