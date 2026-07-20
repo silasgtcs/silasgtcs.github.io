@@ -11,7 +11,7 @@
 - title: 'RDDM: Reactive drift detection method'
   venue: Expert Systems with Applications 90
   year: 2017
-  citations: 268
+  citations: 267
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
   authors:
   - RSM Barros
@@ -29,7 +29,7 @@
 - title: An overview and comprehensive comparison of ensembles for concept drift
   venue: Information Fusion 52
   year: 2019
-  citations: 117
+  citations: 118
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:W7OEmFMy1HYC
   authors:
   - RSM de Barros
@@ -94,7 +94,7 @@
     Streams with Concept Drift
   venue: ACM Transactions on Knowledge Discovery from Data (TKDD) 16 (2)
   year: 2021
-  citations: 16
+  citations: 18
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:LkGwnXOMwfcC
   authors:
   - JIG Hidalgo
