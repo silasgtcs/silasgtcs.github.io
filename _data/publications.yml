@@ -1,7 +1,7 @@
 - title: A comparative study on concept drift detectors
   venue: Expert Systems with Applications 41 (18)
   year: 2014
-  citations: 277
+  citations: 279
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u-x6o8ySG0sC
   authors:
   - PM Gonçalves Jr
@@ -11,7 +11,7 @@
 - title: 'RDDM: Reactive drift detection method'
   venue: Expert Systems with Applications 90
   year: 2017
-  citations: 267
+  citations: 269
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
   authors:
   - RSM Barros
@@ -46,7 +46,7 @@
 - title: A lightweight concept drift detection ensemble
   venue: 2015 IEEE 27th International Conference on Tools with Artificial …
   year: 2015
-  citations: 78
+  citations: 79
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:d1gkVwhDpl0C
   authors:
   - BIF Maciel
