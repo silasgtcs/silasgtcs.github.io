@@ -1,6 +1,9 @@
 import os
+import re
 import yaml
 import requests
+
+_VOLUME_ISSUE_SUFFIX = re.compile(r"\s+\d+\s*(\(\d+\))?$")
 
 SERPAPI_KEY = os.environ.get("SERPAPI_KEY")
 SCHOLAR_ID = os.environ.get("SCHOLAR_ID")
@@ -30,6 +33,8 @@ def fetch_publications() -> list[dict]:
         # Remove o ano e volume que às vezes vêm junto na string de venue
         if "," in venue:
             venue = venue.split(",")[0].strip()
+        # Remove volume/edição que às vezes ficam colados sem vírgula
+        venue = _VOLUME_ISSUE_SUFFIX.sub("", venue).strip()
 
         cited_by = 0
         cited_info = article.get("cited_by") or {}
