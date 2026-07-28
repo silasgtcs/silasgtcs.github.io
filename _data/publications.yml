@@ -1,5 +1,5 @@
 - title: A comparative study on concept drift detectors
-  venue: Expert Systems with Applications 41 (18)
+  venue: Expert Systems with Applications
   year: 2014
   citations: 279
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:u-x6o8ySG0sC
@@ -9,7 +9,7 @@
   - RSM Barros
   - DCL Vieira
 - title: 'RDDM: Reactive drift detection method'
-  venue: Expert Systems with Applications 90
+  venue: Expert Systems with Applications
   year: 2017
   citations: 269
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:IjCSPb-OGe4C
@@ -19,7 +19,7 @@
   - PM Gonçalves Jr
   - SGTC Santos
 - title: A large-scale comparison of concept drift detectors
-  venue: Information Sciences 451
+  venue: Information Sciences
   year: 2018
   citations: 222
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:zYLM7Y9cAGgC
@@ -27,7 +27,7 @@
   - RSM Barros
   - SGTC Santos
 - title: An overview and comprehensive comparison of ensembles for concept drift
-  venue: Information Fusion 52
+  venue: Information Fusion
   year: 2019
   citations: 118
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:W7OEmFMy1HYC
@@ -64,7 +64,7 @@
   - GDS Silva
   - RSM de Barros
 - title: Online adaboost-based methods for multiclass problems
-  venue: Artificial Intelligence Review 53 (2)
+  venue: Artificial Intelligence Review
   year: 2020
   citations: 52
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Y0pCki6q_DkC
@@ -73,7 +73,7 @@
   - RSM de Barros
 - title: A differential evolution based method for tuning concept drift detectors
     in data streams
-  venue: Information Sciences 485
+  venue: Information Sciences
   year: 2019
   citations: 36
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:Tyk-4Ss8FVUC
@@ -92,7 +92,7 @@
   - PMG Júnior
 - title: Dynamically Adjusting Diversity in Ensembles for the Classification of Data
     Streams with Concept Drift
-  venue: ACM Transactions on Knowledge Discovery from Data (TKDD) 16 (2)
+  venue: ACM Transactions on Knowledge Discovery from Data (TKDD)
   year: 2021
   citations: 18
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:LkGwnXOMwfcC
@@ -101,7 +101,7 @@
   - SGTC Santos
   - RSM Barros
 - title: 'MOAManager: A tool to support data stream experiments'
-  venue: 'Software: Practice and Experience 50 (4)'
+  venue: 'Software: Practice and Experience'
   year: 2020
   citations: 13
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:eQOLeE2rZwMC
@@ -110,7 +110,7 @@
   - SGTC Santos
   - RSM Barros
 - title: Spectral analysis and optimization of the condition number problem
-  venue: Computer Physics Communications 258
+  venue: Computer Physics Communications
   year: 2021
   citations: 7
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:_FxGoFyzp5QC
@@ -131,7 +131,7 @@
   - SGTC Santos
 - title: 'Enhancing semi-supervised learning with concept drift detection and self-training:
     a study on classifier diversity and performance'
-  venue: IEEE Access 13
+  venue: IEEE Access
   year: 2025
   citations: 3
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:3fE2CSJIrl8C
@@ -150,7 +150,7 @@
   - JP Barddal
 - title: Paired k-NN learners with dynamically adjusted number of neighbors for classification
     of drifting data streams
-  venue: Knowledge and Information Systems 65 (4)
+  venue: Knowledge and Information Systems
   year: 2023
   citations: 2
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:UebtZRa9Y70C
@@ -178,7 +178,7 @@
   - RSM de Barros
 - title: 'Quantifying Webpage Performance: A Comparative Analysis of TCP/IP and QUIC
     Communication Protocols for Improved Efficiency'
-  venue: Data 8 (8)
+  venue: Data
   year: 2023
   citations: 1
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=2rFpFMcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=2rFpFMcAAAAJ:8k81kl-MbHgC
