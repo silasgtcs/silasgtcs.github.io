@@ -1,7 +1,7 @@
 - title: A comparative study on concept drift detectors
   venue: Expert Systems with Applications
   year: 2014
-  citations: 284
+  citations: 285
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:YsMSGLbcyi4C
   authors:
   - PM Gonçalves Jr
@@ -29,7 +29,7 @@
 - title: An overview and comprehensive comparison of ensembles for concept drift
   venue: Information Fusion
   year: 2019
-  citations: 119
+  citations: 120
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:ufrVoPGSRksC
   authors:
   - RSM de Barros
@@ -139,6 +139,16 @@
   - JLM Perez
   - RSM Barros
   - SGTC Santos
+- title: Paired k-NN learners with dynamically adjusted number of neighbors for classification
+    of drifting data streams
+  venue: Knowledge and Information Systems
+  year: 2023
+  citations: 3
+  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:5nxA0vEk-isC
+  authors:
+  - JIG Hidalgo
+  - SGTC Santos
+  - RSM de Barros
 - title: Evaluating k-NN in the classification of data streams with concept drift
   venue: arXiv preprint arXiv:2210.03119
   year: 2022
@@ -148,16 +158,6 @@
   - RSM de Barros
   - SGTC Santos
   - JP Barddal
-- title: Paired k-NN learners with dynamically adjusted number of neighbors for classification
-    of drifting data streams
-  venue: Knowledge and Information Systems
-  year: 2023
-  citations: 2
-  url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:5nxA0vEk-isC
-  authors:
-  - JIG Hidalgo
-  - SGTC Santos
-  - RSM de Barros
 - title: Experimenting with supervised drift detectors in semi-supervised learning
   venue: 2023 IEEE Symposium Series on Computational Intelligence (SSCI)
   year: 2023
