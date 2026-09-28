@@ -11,7 +11,7 @@
 - title: 'RDDM: Reactive drift detection method'
   venue: Expert Systems with Applications
   year: 2017
-  citations: 276
+  citations: 277
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:eQOLeE2rZwMC
   authors:
   - RSM Barros
@@ -37,7 +37,7 @@
 - title: A boosting-like online learning ensemble
   venue: 2016 international joint conference on neural networks (IJCNN)
   year: 2016
-  citations: 85
+  citations: 86
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:_FxGoFyzp5QC
   authors:
   - RSM de Barros
@@ -84,7 +84,7 @@
 - title: Optimizing the parameters of drift detection methods using a genetic algorithm
   venue: 2015 IEEE 27th International Conference on Tools with Artificial …
   year: 2015
-  citations: 25
+  citations: 26
   url: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=V8uC2AkAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=V8uC2AkAAAAJ:roLk4NBRz8UC
   authors:
   - SGTC Santos
